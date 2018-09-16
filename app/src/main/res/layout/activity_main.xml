@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ToolbarStyle"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_tab_background">
+
+        <cn.ommiao.weixin6_0.MyIcon
+            android:id="@+id/tab_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@mipmap/ic_menu_start_conversation"
+            app:color="@color/orange"
+            app:text="@string/tab_weixin"
+            app:textSize="12sp"/>
+
+        <cn.ommiao.weixin6_0.MyIcon
+            android:id="@+id/tab_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@mipmap/ic_menu_friendslist"
+            app:color="@color/orange"
+            app:text="@string/tab_contact"
+            app:textSize="12sp"/>
+
+        <cn.ommiao.weixin6_0.MyIcon
+            android:id="@+id/tab_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@mipmap/ic_menu_emoticons"
+            app:color="@color/orange"
+            app:text="@string/tab_found"
+            app:textSize="12sp"/>
+
+        <cn.ommiao.weixin6_0.MyIcon
+            android:id="@+id/tab_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:icon="@mipmap/ic_menu_allfriends"
+            app:color="@color/orange"
+            app:text="@string/tab_me"
+            app:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
